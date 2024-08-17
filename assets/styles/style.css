@@ -18,7 +18,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 90vw;
+    width: fit-content;;
     height: 85vh;
     background-color: rgba(246, 250, 253, 0.691);
     border-radius: 10px;
@@ -130,6 +130,7 @@ label{
     height: 2em;
     padding-left: 5px;
     border-radius: 6px;
+    text-align: start;
 }
 #submit-button-container{
     flex-direction: row;
@@ -210,6 +211,9 @@ a{
         width: auto;
         text-align: center;
         font-size: 2vh;
+     }
+     .text-field{
+        text-align: start;
      }
     #confirm-password-label{
       width: 50%;
