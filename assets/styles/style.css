@@ -1,0 +1,217 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+html{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(3, 2, 20);
+}
+body{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 85vh;
+    background-color: rgba(246, 250, 253, 0.691);
+    border-radius: 10px;
+}
+#picture-container{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 30%;
+   height: 100%;
+   flex: 1;
+   position: relative;
+}
+#cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#banner{
+    position: absolute;
+    top: 30%;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: black 3px 3px 5px;
+    font-weight: bolder;
+}
+#form-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    flex: 3;
+}
+#form{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 75%;
+   flex: 4;
+   padding: 3px;
+   gap: 3px;
+   background-color: rgba(155, 246, 208, 0.359);
+   border-top-right-radius: 10px;
+}
+#create-account-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 25%;
+    flex: 1;
+    padding: 3px;
+    gap: 3px;
+    background-color: rgba(1, 1, 39, 0.422);
+    border-bottom-right-radius: 10px;
+}
+#text-field-main-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    flex: 4;
+}
+#left-text-field-container{
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex: 1;
+}
+#right-text-field-container{
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex: 1;
+}
+.text-field-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  padding: 7px 3px 7px 3px;
+  width: 100%;
+  height: 33.33%;
+  flex: 1;
+  gap: 2px;
+}
+label{
+    flex: 1;
+    height: 1.5em;
+    width: auto;
+    font-size: 2vw;
+}
+.text-field{
+    width:100%;
+    height: 2em;
+    padding-left: 5px;
+    border-radius: 6px;
+}
+#submit-button-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 15%;
+    flex: 1;
+    padding: 3px;
+}
+#create-account-button-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35%;
+    height: 70%;
+    flex: 2;
+    padding: 1px;
+}
+#login-message-container{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    flex: 1;
+    padding: 3px;
+}
+.btn{
+    width: 95%;
+    height: 90%;
+    max-height: 50px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 7px;
+    background-color: rgb(37, 76, 247);
+    color: white;
+}
+a{
+    color: lightblue;
+}
+.text-field:invalid{
+    border: red solid 2px;
+}
+@media only screen and (max-width: 499px) {
+    body{
+        flex-direction: column;
+    }
+    #picture-container{
+        width:100%;
+        height: 30%;
+        flex: 1;
+    }
+    #cover{
+        border-top-right-radius: 10px;
+    }
+    #form-container{
+        width:100%;
+        height: 70%;
+        flex: 3;
+    }
+    #text-field-main-container{
+        flex-direction: column;
+    }
+    #left-text-field-container, #right-text-field-container{
+      flex-direction: column;
+      width: 100%;
+      height: 50%;
+      flex: 1;
+    }
+    .text-field-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-field, label{
+        width: auto;
+        text-align: center;
+        font-size: 2vh;
+     }
+    #confirm-password-label{
+      width: 50%;
+    }
+    #confirm-password{
+        width: 50%;
+      }
+    
+}
